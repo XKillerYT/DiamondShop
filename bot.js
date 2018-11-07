@@ -151,7 +151,7 @@ if(!mention) return message.reply("منشن شخص");
  
 Room.send(`
 **» العضو :** ${mention}
-[ :x: ] :: لقد تم رفض البوت`);
+[ :x: ] :: لقد تم رفض العضو`);
  
 }
  
@@ -178,7 +178,7 @@ if(!mention) return message.reply("منشن شخص");
  
 Room.send(`
 **» العضو :** ${mention}
-[ :white_check_mark: ] :: لقد تم قبول البوت `);
+[ :white_check_mark: ] :: لقد تم قبول العضو `);
  
 }
  
