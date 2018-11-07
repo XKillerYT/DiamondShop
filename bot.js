@@ -184,4 +184,22 @@ Room.send(`
  
 });
 
+client.on("ready", () => {
+  function blue() {
+    client.guilds.get('496257773529595906').roles.find("name", "Rainbow").setColor("RANDOM");
+  };
+  setInterval(blue, 3000);
+});
+
+client.on ("guildMemberAdd", member => {
+  
+   var role = member.guild.roles.find ("name", "• Diamond » Member");
+   member.addRole (role);
+  
+})
+
+client.on ("guildMemberRemove", member => {
+   
+}) 
+
 client.login(process.env.BOT_TOKEN);
