@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "#";
-const devs = ['383606619671494659' , '252813587188416512' , '383606619671494659' , ''];
+const devs = ['383606619671494659' , '383606619671494659' , '383606619671494659' , ''];
 const adminprefix = "#";
 
 client.on('ready', () => {
@@ -136,7 +136,7 @@ client.on('message',async message => {
  
 let mention = message.mentions.members.first();
  
-let Room = client.channels.get('509599472473341979');
+let Room = client.channels.get('509960431847211008');
  
 if(message.content.startsWith(prefix + "رفض")) {
  
@@ -163,7 +163,7 @@ client.on('message',async message => {
  
 let mention = message.mentions.members.first();
  
-let Room = client.channels.get('509599472473341979');
+let Room = client.channels.get('509960431847211008');
  
 if(message.content.startsWith(prefix + "قبول")) {
  
