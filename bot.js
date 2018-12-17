@@ -76,7 +76,7 @@ client.on('message', async rokz => {
           col.first().delete();
  
  
-            e.edit(`دليل انك مو نصاب ؟
+            e.edit(`ايش راح تبيع ؟
 [${time}]
 [${lang}]`)
  
@@ -105,7 +105,7 @@ client.on('message', async rokz => {
               rokzz.send(`
 » االاسم : **${lang}**
 » العمر : **${time}**
-» الدليل انه مو نصاب : **${expe}**
+» الي راح يبيعه : **${expe}**
 تم التقديم بواسطة: ${rokz.author}
 `).then(rokzzz => {
  
