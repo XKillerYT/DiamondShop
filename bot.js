@@ -184,12 +184,7 @@ Room.send(`
  
 });
 
-client.on("ready", () => {
-  function blue() {
-    client.guilds.get('496257773529595906').roles.find("name", "Rainbow").setColor("RANDOM");
-  };
-  setInterval(blue, 3000);
-});
+
 
 client.on ("guildMemberAdd", member => {
   
