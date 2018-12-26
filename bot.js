@@ -41,91 +41,91 @@ client.user.setStatus("online")
  
 });
 
-client.on('message', async rokz => {
+client.on('message', async xkiller => {
  
-    if(rokz.content.startsWith(prefix + "تقديم")) {
- 
-      let lang = '';
- 
-      let time = '';
- 
-      let expe = '';
- 
-      let fillter = m => m.author.id === rokz.author.id
- 
-      await rokz.channel.send("اسمك ؟").then(e => {
- 
-     rokz.channel.awaitMessages(fillter, { time: 60000, max: 1 })
- 
-     .then(co => {
- 
-       lang = co.first().content;
- 
-        co.first().delete();
- 
- 
-       e.edit(`عمرك ؟
+  if(xkiller.content.startsWith(prefix + "تقديم")) {
+
+    let lang = '';
+
+    let time = '';
+
+    let expe = '';
+
+    let fillter = m => m.author.id === xkiller.author.id
+
+    await xkiller.channel.send("اسمك ؟").then(e => {
+
+      xkiller.channel.awaitMessages(fillter, { time: 60000, max: 1 })
+
+   .then(co => {
+
+     lang = co.first().content;
+
+      co.first().delete();
+
+
+     e.edit(`عمرك ؟
 [${lang}]`)
- 
-       rokz.channel.awaitMessages(fillter, { time: 60000, max: 1 })
- 
-       .then(col => {
- 
-         time = col.first().content;
- 
-          col.first().delete();
- 
- 
-            e.edit(`ايش راح تبيع ؟
+
+xkiller.channel.awaitMessages(fillter, { time: 60000, max: 1 })
+
+     .then(col => {
+
+       time = col.first().content;
+
+        col.first().delete();
+
+
+          e.edit(`ايش راح تبيع ؟
 [${time}]
 [${lang}]`)
- 
-            rokz.channel.awaitMessages(fillter, { time: 60000, max: 1 })
- 
-            .then(coll => {
- 
-              expe = coll.first().content;
- 
-               coll.first().delete();
- 
- 
-               e.edit(`جاري تقديمك...
+
+xkiller.channel.awaitMessages(fillter, { time: 60000, max: 1 })
+
+          .then(coll => {
+
+            expe = coll.first().content;
+
+             coll.first().delete();
+
+
+             e.edit(`جاري تقديمك...
 [${expe}]
 [${time}]
 [${lang}]`)
- 
-              let rokzz = rokz.guild.channels.find("name","✽-تقديمات")
- 
-              setTimeout(() => {
- 
-                e.edit("تم التقديم")
- 
-              }, 3000)
- 
-              rokzz.send(`
+
+            let xkilleryt = xkiller.guild.channels.find("name","✽-تقديمات")
+
+            setTimeout(() => {
+
+              e.edit("تم التقديم")
+
+            }, 3000)
+
+            xkilleryt.send(`
 » االاسم : **${lang}**
 » العمر : **${time}**
 » الي راح يبيعه : **${expe}**
-تم التقديم بواسطة: ${rokz.author}
-`).then(rokzzz => {
- 
-                  rokzzz.react(":CheckMark:")
- 
-                  rokzzz.react(":WrongMark:")
- 
-                })
- 
-            })
- 
-       })
- 
+تم التقديم بواسطة: ${xkiller.author}
+`).then(xkilleryt => {
+
+  xkilleryt.react(":CheckMark:")
+
+  xkilleryt.react(":WrongMark:")
+
+              })
+
+          })
+
      })
- 
+
    })
- 
-    }
- 
-  })
+
+ })
+
+  }
+
+})
  
  
  
